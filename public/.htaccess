@@ -3,6 +3,10 @@
         Options -MultiViews -Indexes
     </IfModule>
 
+    <FilesMatch \.jpe?g$>
+        ForceType image/jpeg
+    </FilesMatch>
+
     RewriteEngine On
 
     # Handle Authorization Header
