@@ -7,7 +7,7 @@ import calendarView from './views/calendar.vue'
 const routes = [
   { path: '/', component: HomeView },
   { path: '/about', component: aboutView },
-  { path: '/calendar', component: calendarView },
+  { path: '/calendar', component: calendarView},
 ]
 
 const router = createRouter({

@@ -1,15 +1,20 @@
 <template>
-    <v-row class="home-banner stadium mx-0" justify="center">
-        <v-col cols="12" sm="8" md="6" class="d-flex justify-center align-end p-5">
-            <p class="raleway-font text-center">Andrea Casale Sport</p>
-        </v-col>        <v-col cols="12" class="d-flex justify-center align-start">
-            <p class="bebas-font text-center">DESCUBRE TU VERDADERO POTENCIAL</p>
-        </v-col>
-    </v-row>
+    <div>
+        <v-row class="home-banner about-self mx-0 px-5">
+            <v-col cols="12" sm="8" md="6" class="d-flex justify-center align-center p-5">
+                <p class="raleway-font text-center">Andrea Casale es un deportista íntegro, con una visión clara:
+                    La disciplina para lograr las metas es la clave del éxito, y sabe que la mejor formula para
+                    obtenerla
+                    es a través del deporte. Desde temprana edad se ha especializado en esta materia, y acompañado de su
+                    pasión
+                    formativa, ha iniciado una exitosa academia multitudinaria para todas las edades</p>
+            </v-col>
+        </v-row>
+    </div>
 </template>
 <script>
 export default {
-    data(){
+    data() {
         return {
             check: 'about'
         }
@@ -17,13 +22,14 @@ export default {
 }
 </script>
 <style>
-.stadium {
-    background-image: url('/storage/app/public/2151891713.jpg');
+.about-self {
+    background-image: url('/storage/app/public/instagram.jpg');
     background-size: cover;
     background-position-y: 90%;
 }
 
 .home-banner {
+    padding: 1rem;
     display: flex;
     height: 100vh;
     align-items: stretch;
@@ -32,22 +38,27 @@ export default {
 
 }
 
-.bebas-font {
-    font-family: "Bebas Neue", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
 .raleway-font {
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: 700;
     color: white;
-    font-size: 4rem;
+    font-size: 1.7rem;
     font-style: italic;
     text-shadow: 5px 5px 5px #00000069, 5px 4px 0px rgba(0, 0, 0, 0.15);
 }
+
+@media (max-width: 767px) {
+    /* Media query para dispositivos móviles (ajusta el valor si es necesario) */
+
+    .raleway-font {
+        font-size: 1.5rem;
+
+    }
+
+    .about-self {
+        background-position-x: 6%;
+    }
+}
+
 </style>

@@ -2,13 +2,14 @@
     <v-app>
         <v-container fluid class="p-0 m-0">
             <v-main class="p-0 m-0">
-                <v-fab :app="true" location="right bottom" @click="contact.dialog = true" extended
-                    prepend-icon="mdi-account" text="Extended">¡Ùnete!</v-fab>
+                <v-fab class="fab-btn" :layout="true" :app="true" size="large" :width="$vuetify.display.mobile ? '30vw' : '15vw'" @click="contact.dialog = true" extended
+                    prepend-icon="mdi-hand-wave" text="Extended">¡Ùnete!</v-fab>
                 <navbar></navbar>
-                <RouterView @trigger="contact.dialog = true" />
+                <RouterView :user="user" @trigger="contact.dialog = true">
+                </RouterView>
                 <v-footer class="bg-primary">
                     <v-row class="p-0 m-0 d-flex justify-space-evenly">
-                        <v-col cols="3">Andrea Casales. Entrenador</v-col>
+                        <v-col cols="3">Andrea Casale. Entrenador</v-col>
                         <v-col cols="3">ACsports @2025</v-col>
                         <v-col cols="3">Todos los derechos reservados</v-col>
                     </v-row>
@@ -41,6 +42,11 @@ export default {
     },
     data() {
         return {
+            user: {
+                name: 'leonardo',
+                last_name: 'lopez',
+                role_id: 2
+            },
             contact: {
                 dialog: false,
                 email: '',
@@ -49,6 +55,6 @@ export default {
                 cuerpo: ''
             }
         }
-    },
+    }
 }
 </script>
