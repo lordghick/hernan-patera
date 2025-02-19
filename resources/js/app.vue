@@ -9,7 +9,10 @@
                 </RouterView>
                 <v-footer class="bg-primary">
                     <v-row class="p-0 m-0 d-flex justify-space-evenly">
-                        <v-col cols="3">Andrea Casale. Entrenador</v-col>
+                        <v-col cols="3"><v-row>
+                            <v-col class="p-0" cols="12">Andrea Casale. Entrenador</v-col>
+                            <v-col class="p-0" cols="12"><a href="https://www.instagram.com/andreascout_/">@andreascout_</a></v-col>
+                        </v-row></v-col>
                         <v-col cols="3">ACsports @2025</v-col>
                         <v-col cols="3">Todos los derechos reservados</v-col>
                     </v-row>

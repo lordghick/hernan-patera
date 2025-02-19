@@ -8,8 +8,8 @@
             <v-card :title="item.titulo">
                 <v-card-subtitle>Planificado para: {{ item.fecha }}</v-card-subtitle>
                 <v-card-text>{{ item.cuerpo }}</v-card-text>
-                <v-card-actions>
-                    <v-btn elevation="1">¡Solicitar cupo!</v-btn>
+                <v-card-actions class="d-flex justify-center">
+                    <v-btn @click="$emit('trigger')" class="bg-primary" elevation="1">¡Solicitar cupo!</v-btn>
                     <v-btn class="bg-warning" v-if="user.role_id == 1">Eliminar</v-btn>
                 </v-card-actions>
             </v-card>
@@ -68,6 +68,7 @@ export default {
 
 .activities {
     margin-top: 3rem;
+    border-radius: 10px;
 }
 
 .bebas-font {

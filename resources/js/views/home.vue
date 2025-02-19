@@ -44,7 +44,7 @@
             </v-col>
 
             <v-col cols="10" sm="6" md="3">
-                <v-btn class="no-deco" to="/about" block text="Ver nuestras actividades"></v-btn>
+                <v-btn class="no-deco" to="/calendar" block text="Ver nuestras actividades"></v-btn>
             </v-col>
         </v-row>
     </div>
@@ -67,7 +67,7 @@ export default {
 .banner-subtitle {
     position: absolute;
     top: 40vh;
-    left: 20vw;
+    left: 19.5vw;
     color: white;
     font-size: 2.3rem;
 
