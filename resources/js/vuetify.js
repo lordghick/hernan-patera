@@ -9,7 +9,7 @@ import { aliases, mdi } from 'vuetify/iconsets/mdi'
 
 const myCustomLightTheme = {
   colors: {
-    primary: "#42b983",
+    primary: "#000000",
     success: colors.green.lighten1,
     info: colors.blue.darken3,
     warning: '#f79533',

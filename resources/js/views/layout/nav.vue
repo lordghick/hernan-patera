@@ -3,11 +3,11 @@
         <v-app-bar flat :color="navbarColor" app>
 
             <v-app-bar-nav-icon v-if="$vuetify.display.mobile" style="color: white;" @click="toggleDrawer"></v-app-bar-nav-icon>
-            <v-app-bar-title style="color: white;">ACsports</v-app-bar-title>
+            <v-app-bar-title style="color: white;">LA PATERA</v-app-bar-title>
             <div class="d-none d-md-flex justify-space-evenly">
                 <v-btn text to="/">INICIO</v-btn>
-                <v-btn text to="/calendar">ACTIVIDADES</v-btn>
-                <v-btn text to="/about">SOBRE LA ACADEMIA</v-btn>
+                <v-btn text to="/calendar">EVENTOS</v-btn>
+                <v-btn text to="/about">SOBRE LA BANDA</v-btn>
             </div>
         </v-app-bar>
 
@@ -17,10 +17,10 @@
                     <v-list-item-title>Inicio</v-list-item-title>
                 </v-list-item>
                 <v-list-item link to="/calendar">
-                    <v-list-item-title>Actividades</v-list-item-title>
+                    <v-list-item-title>Eventos</v-list-item-title>
                 </v-list-item>
                 <v-list-item link to="/about">
-                    <v-list-item-title>Sobre la academia</v-list-item-title>
+                    <v-list-item-title>Sobre la banda</v-list-item-title>
                 </v-list-item>
             </v-list>
         </v-navigation-drawer>
@@ -47,9 +47,9 @@ export default {
                 const opacity = Math.min(1, (this.scrollPosition - threshold) / 100); // Opacidad gradual
 
                 let endRGB = {
-                    r: 66,
-                    g: 185,
-                    b: 131
+                    r: 0,
+                    g: 0,
+                    b: 0
                 }
 
                 return `rgb(${endRGB.r}, ${endRGB.g}, ${endRGB.b}, ${opacity})`;

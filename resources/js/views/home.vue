@@ -3,31 +3,23 @@
         <v-row class="position-relative">
             <v-carousel :height="$vuetify.display.mobile ? '927' : '750'" :show-arrows="false" cycle
                 hide-delimiter-background>
-                <v-carousel-item src="/storage/pov.jpg" cover></v-carousel-item>
-                <v-carousel-item src="/storage/center-field.jpg" cover></v-carousel-item>
-                <v-carousel-item src="/storage/stretch.jpg" cover></v-carousel-item>
-                <v-carousel-item src="/storage/front-gym.jpg" cover></v-carousel-item>
-                <v-carousel-item src="/storage/group.jpg" cover></v-carousel-item>
+                <v-carousel-item src="/storage/IMG_1237.jpg" cover></v-carousel-item>
+                <v-carousel-item src="/storage/IMG_1239.jpg" cover></v-carousel-item>
+                <v-carousel-item src="/storage/IMG_1233.jpg" cover></v-carousel-item>
+                <!-- <v-carousel-item src="/storage/front-gym.jpg" cover></v-carousel-item>
+                <v-carousel-item src="/storage/group.jpg" cover></v-carousel-item> -->
             </v-carousel>
-            <h3 class="banner-title">Deportes para la <strong>formación</strong></h3>
-            <h3 class="banner-subtitle"><strong>Fútbol</strong> para la <strong>vida</strong></h3>
+            <h3 class="banner-title"><strong>LA PATERA</strong></h3>
+            <h3 class="banner-subtitle"><strong>Banda Tributo</strong></h3>
         </v-row>
         <v-row class="carrousell-background d-flex align-center justify-space-evenly mx-0">
-            <v-col cols="12" md="4">
-                <v-btn class="bg-primary" block @click="$emit('trigger')">¡Quiero saber más!</v-btn>
+            <v-col cols="4" class="gallery-1">
             </v-col>
-            <v-col cols="12" md="6">
-                <v-row class="p-0 m-0">
-                    <v-col class=" info-father" cols="12"
-                        style="background-image: url('/storage/2149708032.jpg');"></v-col>
-                    <v-col cols="12" class="mt-3">
-                        <p class="text-center">Tenemos el método adecuado
-                            para cualquier necesidad, sea rendimiento, potencia o estrategia. Con nosotros
-                            <strong>tu progreso en el deporte está asegurado</strong>
-                        </p>
-                    </v-col>
-                </v-row>
+            <v-col cols="4" class="gallery-2">
             </v-col>
+            <v-col cols="4" class="gallery-3">
+            </v-col>
+                <v-btn class="bg-primary flying-btn" block @click="$emit('trigger')">¡Quiero verlos!</v-btn>
         </v-row>
         <v-row class="grass d-flex justify-center p-5 mx-0">
             <v-col cols="12" class="d-flex justify-center align-end">
@@ -60,17 +52,45 @@ export default {
     top: 35vh;
     left: 10vw;
     color: white;
-    font-size: 2.3rem;
+    font-size: 6rem;
+    font-family: "New Rocker", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 5px 5px 2px black;
 
 }
 
 .banner-subtitle {
+    display: none;
     position: absolute;
     top: 40vh;
-    left: 19.5vw;
+    left: 10vw;
     color: white;
     font-size: 2.3rem;
 
+}
+
+.flying-btn {
+    position: absolute;
+}
+
+.gallery-1 {
+    background-image: url('/storage/app/public/IMG_1235.jpg');
+    background-position-y: 0%;
+    background-position-x: 30%;
+    height: 100%;
+}
+.gallery-2 {
+    background-image: url('/storage/app/public/IMG_1236.jpg');
+    background-position-y: 0%;
+    background-position-x: 30%;
+    height: 100%;
+}
+.gallery-3 {
+    background-image: url('/storage/app/public/IMG_1234.jpg');
+    background-position-y: 25%;
+    background-position-x: 30%;
+    height: 100%;
 }
 
 .bebas-font {
@@ -110,7 +130,6 @@ export default {
 
 .carrousell-background {
     height: 90vh;
-    padding: 3rem;
 }
 
 .carrousell {
